@@ -1,0 +1,14 @@
+<div class="col-sm-3 user">
+
+    <div class="card" style="width:400px" >
+        <img height="200" width="200" class="card-img-top" src="{{user.photo}}" alt="Card image" userHover>
+        <div class="card-body">
+            <div class="card-context">
+                <h4 class="card-title" [ngClass]="{'marked':isMarked}">{{ user.name | uppercase}}</h4>
+                <p class="card-text">{{ user.geo }}</p>
+            </div>
+            <a class="btn btn-primary" (click)="selectUser()">Отметить</a>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,18 @@
+<div class="container">
+
+    <div class="row">
+        <label for="input">Search by name: </label>
+        <input style="width: 300px; margin-bottom: 70px;" class="form-control" id="input" type="text" [(ngModel)]="searchValue"/>
+    </div>
+  
+    <div class="row">
+  
+        <app-user *ngFor="let u of users | pipesearch:searchValue" [user]="u"></app-user>
+  
+    </div>   
+  
+  </div>
+  
+  
+  
+  
